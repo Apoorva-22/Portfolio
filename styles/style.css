@@ -1,0 +1,261 @@
+:root {
+    --bg: #0F172A;
+    --card: #111827;
+    --text: #ffffff;
+    --secondary: #CBD5E1;
+    --accent: #38BDF8;
+}
+
+.light {
+    --bg: #F8FAFC;
+    --card: #FFFFFF;
+    --text: #0F172A;
+    --secondary: #334155;
+    --accent: #0EA5E9;
+}
+
+/* ---------------- MAIN APP ---------------- */
+
+.stApp {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.block-container {
+    padding-top: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+/* ---------------- NAVBAR ---------------- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+.nav-left {
+    color: var(--text);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-right a {
+    color: var(--secondary);
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 18px;
+}
+
+.nav-right a:hover {
+    color: var(--accent);
+    transition: 0.3s ease;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+
+.main-title {
+    color: var(--text);
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    color: var(--accent);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: var(--secondary);
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* ---------------- CARDS BASE (IMPORTANT FIX) ---------------- */
+
+.skill-card,
+.project-card,
+.timeline-card,
+.cert-card,
+.contact-card,
+.about-card {
+    background-color: var(--card);
+    border: 1px solid #1E293B;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect common */
+.skill-card:hover,
+.project-card:hover,
+.timeline-card:hover,
+.cert-card:hover,
+.custom-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 0px 25px rgba(56, 189, 248, 0.2);
+}
+
+/* ---------------- SKILL CARD FIX (IMPORTANT BUG FIXED) ---------------- */
+
+.skill-card {
+    padding: 30px;
+    margin-bottom: 25px;
+    color: var(--secondary);
+    font-size: 18px;
+    line-height: 2;
+}
+
+.skill-card h3 {
+    color: var(--accent);
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* ---------------- PROJECT CARD ---------------- */
+
+.project-card {
+    padding: 35px;
+    margin-bottom: 20px;
+}
+
+/* ---------------- TIMELINE / CERT / CONTACT ---------------- */
+
+.timeline-card,
+.cert-card {
+    padding: 35px;
+    margin-bottom: 20px;
+}
+
+.contact-card {
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+/* ---------------- FORM ---------------- */
+
+form {
+    background-color: var(--card);
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #1E293B;
+}
+
+/* Inputs */
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1E293B;
+    color: var(--text);
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+/* ---------------- BUTTON FIX ---------------- */
+
+button {
+    background-color: var(--accent);
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+}
+
+/* Streamlit button override */
+.stButton > button {
+    background-color: var(--accent);
+    color: black;
+    border-radius: 10px;
+    height: 50px;
+    width: 220px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+
+.stButton > button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s ease;
+}
+
+/* ---------------- SOCIAL LINKS ---------------- */
+
+.social-links a {
+    text-decoration: none;
+    color: var(--accent);
+    font-size: 18px;
+    margin-right: 25px;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+/* ---------------- SECTION TITLE ---------------- */
+
+.section-title {
+    color: var(--text);
+    font-size: 42px;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+/* ---------------- ABOUT ---------------- */
+
+.about-card {
+    padding: 40px;
+    color: var(--secondary);
+    font-size: 20px;
+    line-height: 1.9;
+}
+
+/* ---------------- IMAGE ---------------- */
+
+img {
+    border-radius: 20px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 768px) {
+
+    .main-title {
+        font-size: 42px;
+    }
+
+    .sub-title {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
