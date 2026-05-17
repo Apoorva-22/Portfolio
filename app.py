@@ -187,7 +187,7 @@ div[data-testid="stToggle"] {{
 </style>
 """, unsafe_allow_html=True)
 
-# ---------------- HERO SECTION ---------------- #
+# ---------------- MAIN SECTION ---------------- #
 
 col1, col2 = st.columns([2, 1])
 
